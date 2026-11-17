@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#4057b9">
+<title>English Adventure – 4 interaktive Arbeitsblätter</title>
+<style>
+:root{--ink:#24304a;--sub:#66718a;--blue:#475bc1;--blue2:#edf1ff;--line:#dce2ef;--green:#187649;--lightgreen:#e9f8ee;--red:#b53e4b;--lightred:#ffedf0;--gold:#d78628;--paper:#fff;--bg:#f5f7fc;--focus:#fbaf3e}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}button,input{font:inherit}button{cursor:pointer;-webkit-tap-highlight-color:transparent}button:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid var(--focus);outline-offset:3px}h1,h2,h3,p{margin-top:0}h1{font-size:clamp(1.6rem,3.6vw,2.55rem);line-height:1.17;letter-spacing:-.02em}h2{font-size:1.38rem;line-height:1.3}h3{font-size:1.13rem}p{margin-bottom:.75rem}small,.small{color:var(--sub);font-size:.85rem}.shell{max-width:1150px;margin:auto;padding:24px 20px 75px}.mast{border-radius:28px;padding:28px 30px;background:linear-gradient(120deg,#e8edff,#f8eafd 62%,#fff3e5);border:1px solid #e0e4f9;box-shadow:0 10px 35px #2735670c}.eyebrow{font-weight:800;color:#5260a0;letter-spacing:.09em;font-size:.79rem;text-transform:uppercase}.masttop{display:flex;justify-content:space-between;gap:18px;align-items:flex-start}.mast p{max-width:640px}.hero-emoji{font-size:3.5rem;background:#ffffffb0;width:112px;height:112px;border-radius:30px;display:grid;place-items:center;transform:rotate(5deg);flex-shrink:0}.name-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:16px}.name-row label{font-weight:800}.name-row input{background:white;border:2px solid #c4cbea;border-radius:12px;padding:10px 14px;width:220px;max-width:100%}.pill{border-radius:100px;padding:6px 11px;background:#fff9;font-size:.85rem;font-weight:700}.toptools{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}.btn{border:1px solid var(--line);background:white;border-radius:13px;min-height:44px;padding:9px 16px;color:var(--ink);font-weight:750;box-shadow:0 2px 3px #24304a08}.btn:hover{border-color:#97a6e5;background:#f9faff}.btn.primary{color:#fff;border-color:#4258c4;background:#4258c4}.btn.primary:hover{background:#3348b0}.btn.warn{color:var(--red);border-color:#f0c7ce}.btn.ghost{background:transparent;box-shadow:none}.btn:disabled{opacity:.48;cursor:default}.nav{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:20px 0 12px}.nav button{text-align:left;border-radius:18px;border:2px solid #dde4ef;background:#fff;min-height:91px;padding:13px 16px;color:var(--ink);box-shadow:0 3px 8px #172b4308}.nav button[aria-current="page"]{border-color:var(--blue);background:#ecf0ff}.nav .num{font-size:.78rem;font-weight:800;color:#6876a1}.nav .nvtitle{display:block;font-size:1.17rem;font-weight:850;margin-top:3px}.nav .nvstat{font-size:.76rem;color:#65758c}.overview{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:6px 0 18px}.meter{height:12px;border-radius:12px;background:#dfe5f1;overflow:hidden;min-width:135px;flex:1}.meter>i{display:block;background:linear-gradient(90deg,#648ae5,#3cba98);height:100%;border-radius:12px;transition:width .3s}.sheet{background:#fff;border:1px solid var(--line);border-radius:25px;padding:24px;box-shadow:0 7px 22px #24304a0d}.sheethead{display:flex;align-items:center;gap:15px;flex-wrap:wrap}.sheeticon{font-size:2.7rem;line-height:1;background:var(--blue2);border-radius:18px;padding:14px}.sheethead h2{margin:0}.sheethead p{margin:4px 0 0;color:var(--sub)}.sheethead .tag{margin-left:auto;border-radius:60px;background:#eff2ff;padding:7px 13px;font-weight:800;color:#4559aa}.instructions{background:#f5f7ff;border-left:5px solid #6779d0;padding:12px 16px;border-radius:5px 12px 12px 5px;margin:18px 0}.task{padding:21px 0 22px;border-top:1px solid var(--line)}.task:first-of-type{border-top:0}.taskhead{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:9px}.taskhead h3{margin:0;font-size:1.18rem}.taskdone{font-size:.79rem;border-radius:30px;background:#eef2f9;padding:6px 10px;white-space:nowrap;color:#617085;font-weight:800}.taskdone.yes{background:var(--lightgreen);color:var(--green)}.hint{color:#586780;margin:0 0 15px}.questiongrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}.qcard{border:1px solid #dfe4ee;background:#fbfcff;border-radius:16px;padding:15px}.qtitle{display:flex;align-items:center;gap:10px;min-height:59px;margin-bottom:10px}.qicon{font-size:2.4rem;line-height:1}.qword{font-weight:800}.choices{display:flex;gap:7px;flex-wrap:wrap}.choice{border:2px solid #dfe5f0;background:white;padding:8px 13px;border-radius:11px;min-height:46px;font-weight:750;min-width:63px}.choice.selected{background:#e7edff;border-color:#5b6dd1;color:#33469e}.choice.good{border-color:#29915b;background:var(--lightgreen);color:#176f42}.choice.bad{border-color:#c95463;background:var(--lightred);color:#a52e41}.qfeedback{font-size:.8rem;font-weight:800;margin-top:7px;color:var(--red)}.taskactions{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:16px}.feedback{margin-top:11px;border-radius:13px;border:1px solid #d8e0ec;padding:11px 13px;font-weight:700;background:#f6f8fc}.feedback.ok{background:var(--lightgreen);color:var(--green);border-color:#c3e5d1}.feedback.try{background:var(--lightred);color:#a33447;border-color:#f3c8ce}.feedback.info{background:#eff3ff;color:#425aa7;border-color:#d4defb}.solution{margin-top:10px;background:#fffaeb;border:1px dashed #edc673;padding:13px;border-radius:13px;font-weight:700}.pairwrap{display:grid;grid-template-columns:1fr 1fr;gap:16px}.pairhead{color:#6b7690;font-size:.82rem;font-weight:800;margin-bottom:7px}.paircol{display:grid;gap:9px;align-content:start}.pairbtn{border:2px solid #dce3ef;border-radius:13px;min-height:55px;background:#fff;text-align:left;padding:8px 13px;font-weight:750;display:flex;align-items:center;gap:9px;word-break:break-word}.pairbtn .speak{margin-left:auto}.pairbtn.on{border-color:#6475d5;background:#ecf0ff}.pairbtn.matched{border-color:#bbdfca;background:#f0f9f2;color:#187749}.pairbtn:disabled{opacity:.85;cursor:default}.pairbtn .tiny-icon{font-size:1.65rem}.orderprompt{display:flex;gap:13px;flex-wrap:wrap;padding:12px;background:#f3f6fd;border-radius:12px;margin-bottom:12px;align-items:center}.orderprompt .pic{display:inline-flex;align-items:center;gap:5px;font-size:1.8rem}.orderlist{display:grid;gap:9px;max-width:650px}.order-tile{display:flex;gap:9px;align-items:center;min-height:58px;background:#fff;border:2px solid #dde3ef;border-radius:12px;padding:5px 9px;transition:background .12s;user-select:none}.order-tile.dragging{background:#e8efff;border-color:#5269c7;opacity:.8;box-shadow:0 4px 12px #283e7d20}.order-tile.target-swap{border-color:#5c72d5;background:#eaf0ff}.order-tile.good{border-color:#62b685;background:#eaf9ef}.order-tile.bad{border-color:#e08c94;background:#fff0f2}.handle{touch-action:none;cursor:grab;display:flex;align-items:center;justify-content:center;width:41px;height:43px;font-size:1.5rem;color:#5b6c91;background:#edf1fa;border-radius:9px;flex:none}.order-label{flex:1;text-align:left;min-width:0;border:0;background:transparent;font-weight:850;padding:7px;min-height:43px}.ordernum{border-radius:100%;background:#ecf0f8;display:inline-grid;place-items:center;width:27px;height:27px;font-size:.85rem;color:#576b92;font-weight:850}.movebtn{border:1px solid #d5dce9;background:#f5f7fd;color:#37476b;border-radius:9px;width:40px;height:40px;font-weight:850;font-size:1.24rem}.movebtn:disabled{opacity:.25}.memorygrid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:9px;max-width:780px}.memcard{height:100px;border-radius:13px;border:2px solid #405bbb;background:linear-gradient(145deg,#647bd8,#435bbb);color:white;font-weight:800;display:grid;place-items:center;text-align:center;line-height:1.2;overflow-wrap:anywhere;padding:6px;box-shadow:0 4px 8px #30427814}.memcard.back{background:#fff;border-color:#a6b5e7;color:#243a6b}.memcard.found{background:#e5f7ec;border-color:#9acfae;color:#246f48}.memfront{font-size:2.1rem}.memword{font-size:.98rem}.speak{display:inline-grid;place-items:center;width:34px;height:34px;min-width:34px;padding:0;border:1px solid #d3dced;border-radius:9px;background:#fff;color:#5468b3;font-size:1rem}.vocabdetails{margin-top:16px;padding:13px 15px;border-radius:13px;border:1px solid #dee5f3;background:#fafbff}summary{cursor:pointer;font-weight:800}.vocabs{display:grid;grid-template-columns:repeat(2,1fr);gap:7px;margin-top:12px}.vocabrow{display:flex;align-items:center;gap:8px;border:1px solid #e5e9f4;border-radius:9px;background:white;padding:6px 9px}.vocabrow span:first-child{flex:1}.vocabrow span:nth-child(2){font-weight:850;color:#394a9e}.extra-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.extra-item{border:1px solid #dfe4ef;background:#fbfcff;border-radius:15px;padding:14px}.extra-icon{font-size:2.5rem}.palette{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:16px}.palettebtn{border:2px solid #dce1e9;background:white;border-radius:11px;display:flex;align-items:center;gap:8px;min-height:49px;padding:7px 11px;font-weight:800}.palettebtn.active{border-color:#435ec8;background:#edf0ff}.swatch{display:inline-block;border:1px solid #0002;width:27px;height:27px;border-radius:8px;flex:none}.paintgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:11px}.paintbtn{border:2px solid #e0e4ef;border-radius:15px;background:#fff;padding:9px;min-height:165px;display:flex;flex-direction:column;align-items:center;gap:2px;justify-content:center;font-weight:800}.paintbtn svg{width:95px;height:95px;max-width:100%}.paintbtn.good{border-color:#29915b;background:#eff9f3}.paintbtn.bad{border-color:#c95463;background:#fff1f3}.packlayout{display:grid;grid-template-columns: minmax(210px,.8fr) minmax(0,1.6fr);gap:19px;align-items:start}.bag{background:#eaf0ff;border:2px dashed #abb9e9;border-radius:20px;padding:17px;text-align:center;min-height:280px}.bag-emoji{font-size:6rem;line-height:1.3}.bag-inner{display:flex;gap:5px;flex-wrap:wrap;justify-content:center;min-height:57px}.bag-inner span{padding:3px 9px;border-radius:20px;background:white;border:1px solid #cbd5f0;font-size:.95rem}.packitems{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.packbtn{border:2px solid #dce4ef;border-radius:12px;background:#fff;min-height:111px;padding:9px;text-align:center;font-weight:800}.packbtn .pic{display:block;font-size:2rem}.packbtn.chosen{border-color:#4a70c7;background:#eaf0ff}.sheetfooter{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;padding-top:21px;border-top:1px solid var(--line)}.well{background:#eff9f1;border:1px solid #b4dfc2;color:#207043;border-radius:12px;padding:15px;margin:17px 0;font-weight:800}.footerline{text-align:center;color:#7e8aa0;font-size:.81rem;padding:18px}.hidden{display:none!important}
+@media(max-width:820px){.shell{padding:13px 12px 50px}.mast{padding:20px}.hero-emoji{width:70px;height:70px;font-size:2.4rem;border-radius:18px}.nav{gap:7px}.nav button{padding:10px;min-height:82px}.nav .nvtitle{font-size:.94rem}.nav .nvstat{font-size:.72rem}.sheet{padding:18px}.paintgrid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:570px){body{font-size:16px}.masttop{gap:9px}.hero-emoji{display:none}.nav{grid-template-columns:repeat(2,1fr)}.questiongrid,.extra-grid{grid-template-columns:1fr}.pairwrap{gap:8px}.pairbtn{padding:8px;min-height:64px;font-size:.93rem}.memorygrid{grid-template-columns:repeat(4,minmax(0,1fr));gap:7px}.memcard{height:85px}.paintgrid{grid-template-columns:repeat(2,1fr)}.packlayout{grid-template-columns:1fr}.packitems{grid-template-columns:repeat(3,1fr)}.bag{min-height:185px}.bag-emoji{font-size:4rem}.vocabs{grid-template-columns:1fr}.sheethead .tag{margin-left:0}}
+@media print{body{background:white}.shell{padding:0;max-width:none}.mast,.nav,.overview,.toptools,.sheetfooter,.footerline,.taskactions,.speak,.handle,.movebtn{display:none!important}.sheet{box-shadow:none;border:0;padding:0}.task{break-inside:avoid}.questiongrid{grid-template-columns:repeat(2,1fr)}.memcard{height:65px}.sheethead{border-bottom:2px solid #222;padding-bottom:12px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<div id="app" class="shell"></div>
+<script>
+'use strict';
+// Vier Arbeitsblätter, komplett offline und ohne externe Bibliotheken.
+const COLORS={red:'#ec4b55',orange:'#f59c37',yellow:'#f4cd36',green:'#49ac70',blue:'#4287de',brown:'#98633d',black:'#333a49',pink:'#f291bf'};
+const DATA=[
+{id:'animals',num:1,title:'Animals',emoji:'🐾',subtitle:'Tiere erkennen, zuordnen und ihre Namen üben.',intro:'Schau dir die Bilder genau an. Tippe die passenden englischen Wörter an.',
+ vocab:[['Hund','dog','🐶'],['Katze','cat','🐱'],['Fisch','fish','🐟'],['Hamster','hamster','🐹'],['Schildkröte','turtle','🐢'],['Maus','mouse','🐭'],['Schlange','snake','🐍'],['Spinne','spider','🕷️'],['Haustier','pet','🐾'],['Tierarzt / Tierärztin','vet','🩺']],
+ quiz:[['🐶','Hund','dog',['dog','cat','mouse']],['🐱','Katze','cat',['hamster','cat','dog']],['🐟','Fisch','fish',['fish','snake','mouse']],['🐹','Hamster','hamster',['hamster','fish','spider']],['🐢','Schildkröte','turtle',['snake','turtle','cat']],['🐭','Maus','mouse',['mouse','hamster','fish']]],
+ pairs:[['Schlange','snake'],['Spinne','spider'],['Schildkröte','turtle'],['Fisch','fish'],['Katze','cat'],['Hund','dog']],
+ seq:{prompt:'So sehen die Bilder aus. Ordne die englischen Tiernamen genauso an:',icons:['🐢','🐶','🐹','🐟'],answer:['turtle','dog','hamster','fish']},
+ memory:[['🐶','dog'],['🐢','turtle'],['🐭','mouse'],['🐱','cat'],['🐟','fish']],special:'letters'},
+{id:'colours',num:2,title:'Colours',emoji:'🌈',subtitle:'Farben wiederholen und selbst ausmalen.',intro:'Achte auf die Farben und lies die englischen Wörter.',
+ vocab:[['Rot','red',''],['Orange','orange',''],['Gelb','yellow',''],['Grün','green',''],['Blau','blue',''],['Braun','brown',''],['Schwarz','black',''],['Rosa','pink','']],
+ quiz:[['red','Rot','red',['red','blue','pink']],['blue','Blau','blue',['brown','blue','green']],['green','Grün','green',['green','yellow','orange']],['yellow','Gelb','yellow',['orange','yellow','red']],['brown','Braun','brown',['black','brown','pink']],['pink','Rosa','pink',['pink','red','orange']]],
+ pairs:[['Orange','orange'],['Schwarz','black'],['Grün','green'],['Blau','blue'],['Gelb','yellow'],['Braun','brown']],
+ seq:{prompt:'Ordne die Regenbogenfarben: Rot → Orange → Gelb → Grün → Blau.',icons:['red','orange','yellow','green','blue'],answer:['red','orange','yellow','green','blue']},
+ memory:[['red','red'],['blue','blue'],['yellow','yellow'],['green','green'],['pink','pink']],special:'paint'},
+{id:'family',num:3,title:'Family',emoji:'👨‍👩‍👧‍👦',subtitle:'Familienmitglieder benennen und Sätze bilden.',intro:'Erkenne die Familienmitglieder und verbinde Deutsch mit Englisch.',
+ vocab:[['Mutter','mother','👩'],['Vater','father','👨'],['Schwester','sister','👧'],['Bruder','brother','👦'],['Tante','aunt','👩‍🦱'],['Onkel','uncle','👨‍🦱'],['Opa','grandfather','👴'],['Baby','baby','👶'],['Tochter','daughter','👧'],['Sohn','son','👦']],
+ quiz:[['👩','Mutter','mother',['mother','sister','aunt']],['👨','Vater','father',['uncle','father','brother']],['👧','Schwester','sister',['sister','mother','baby']],['👦','Bruder','brother',['father','baby','brother']],['👩‍🦱','Tante','aunt',['aunt','sister','mother']],['👨‍🦱','Onkel','uncle',['grandfather','uncle','father']]],
+ pairs:[['Opa','grandfather'],['Baby','baby'],['Tochter','daughter'],['Sohn','son'],['Tante','aunt'],['Onkel','uncle']],
+ seq:{prompt:'Ordne die englischen Wörter zu den Bildern von links nach rechts:',icons:['👴','👩','👧','👶'],answer:['grandfather','mother','sister','baby']},
+ memory:[['Mutter','mother'],['Vater','father'],['Schwester','sister'],['Bruder','brother'],['Tante','aunt']],special:'sentences'},
+{id:'school',num:4,title:'School things',emoji:'🎒',subtitle:'Was gehört in meinen Tornister?',intro:'Erkenne deine Schulsachen und packe deinen schoolbag.',
+ vocab:[['Tornister / Schulranzen','schoolbag','🎒'],['Bleistift','pencil','✏️'],['Füller / Stift','pen','🖊️'],['Lineal','ruler','📏'],['Schere','scissors','✂️'],['Buch','book','📖'],['Mäppchen','pencil case','🧰'],['Radiergummi','rubber','🧽'],['Kleber','glue','🧴'],['Spitzer','sharpener','🔩'],['Filzstift','felt tip','🖍️'],['Heft','exercise book','📓']],
+ quiz:[['🎒','Tornister','schoolbag',['schoolbag','pencil case','book']],['✏️','Bleistift','pencil',['pen','pencil','ruler']],['📏','Lineal','ruler',['ruler','glue','rubber']],['✂️','Schere','scissors',['sharpener','scissors','felt tip']],['📖','Buch','book',['book','exercise book','schoolbag']],['🧴','Kleber','glue',['rubber','glue','pencil case']]],
+ pairs:[['Mäppchen','pencil case'],['Radiergummi','rubber'],['Stift','pen'],['Spitzer','sharpener'],['Filzstift','felt tip'],['Heft','exercise book']],
+ seq:{prompt:'Packe in dieser Reihenfolge: Buch → Mäppchen → Lineal → Schere → Kleber.',icons:['📖','🧰','📏','✂️','🧴'],answer:['book','pencil case','ruler','scissors','glue']},
+ memory:[['🎒','schoolbag'],['✏️','pencil'],['📏','ruler'],['✂️','scissors'],['📖','book']],special:'pack'}
+];
+const STORAGE_KEY='english_inclusion_ab_4_v3';
+const TASK_IDS=['quiz','match','order','memory','special'];
+const app=document.querySelector('#app');
+function safe(str){return String(str).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;').replaceAll("'",'&#39;')}
+function shuffle(arr){let a=[...arr];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+function load(){try{let s=JSON.parse(localStorage.getItem(STORAGE_KEY));return (s&&typeof s==='object'&&s.version===3)?s:null}catch(_){return null}}
+function empty(){return {version:3,name:'',active:0,quiz:{},pairs:{},order:{},memory:{},special:{},checked:{},attempts:{},solutions:{},complete:{}}}
+let S=load()||empty();if(!Number.isInteger(S.active)||S.active<0||S.active>3)S.active=0;
+let selectedLeft={},messages={},swapSelect={},memoryOpen={},memoryBusy={},drag=null;
+function save(){try{localStorage.setItem(STORAGE_KEY,JSON.stringify(S))}catch(_){}}
+function getD(){return DATA[S.active]}
+function taskKey(id,type){return `${id}.${type}`}
+function setDone(id,type,ok){S.complete[taskKey(id,type)]=!!ok}
+function isDone(id,type){return !!S.complete[taskKey(id,type)]}
+function doneCount(id){return TASK_IDS.filter(t=>isDone(id,t)).length}
+function totalDone(){return DATA.reduce((n,d)=>n+doneCount(d.id),0)}
+function ensure(d){
+ if(!S.quiz[d.id])S.quiz[d.id]={};
+ if(!S.pairs[d.id])S.pairs[d.id]={found:[],rightOrder:shuffle(d.pairs.map((_,i)=>i))};
+ if(!S.order[d.id]){
+   let arr=shuffle(d.seq.answer);if(arr.join('|')===d.seq.answer.join('|'))arr.reverse();
+   S.order[d.id]=arr;
+ }
+ if(!S.memory[d.id]){
+   let cards=d.memory.flatMap((p,i)=>[{pair:i,kind:'front',value:p[0]},{pair:i,kind:'back',value:p[1]}]);
+   S.memory[d.id]={cards:shuffle(cards),found:[]};
+ }
+ if(!S.special[d.id])S.special[d.id]={};
+}
+function getCheck(d,type){return !!S.checked[taskKey(d.id,type)]}
+function checkMark(d,type){return `<span class="taskdone ${isDone(d.id,type)?'yes':''}">${isDone(d.id,type)?'✅ Geschafft':'○ Noch offen'}</span>`}
+function taskHead(d,type,number,title,hint){return `<div class="taskhead"><h3>${number}. ${title}</h3>${checkMark(d,type)}</div><p class="hint">${hint}</p>`}
+function speakButton(english){return `<button type="button" class="speak" title="Wort anhören" aria-label="${safe(english)} anhören" data-action="say" data-text="${safe(english)}">🔊</button>`}
+function getIcon(item){if(COLORS[item])return `<span class="swatch" style="width:48px;height:48px;background:${COLORS[item]}"></span>`;return `<span class="qicon">${safe(item)}</span>`}
+function renderQuiz(d){
+ const answers=S.quiz[d.id];let checked=getCheck(d,'quiz');
+ let cards=d.quiz.map((q,i)=>{
+   let [icon,de,en,options]=q,chosen=answers[i];
+   return `<div class="qcard"><div class="qtitle">${getIcon(icon)}<span class="qword">${safe(de)}</span>${speakButton(en)}</div><div class="choices">${options.map(opt=>{
+     const selected=chosen===opt;
+     return `<button type="button" class="choice ${selected?'selected':''} ${checked&&selected?(opt===en?'good':'bad'):''}" data-action="answer" data-index="${i}" data-value="${safe(opt)}" aria-pressed="${selected}">${safe(opt)}</button>`
+   }).join('')}</div>${checked&&chosen!==en?`<div class="qfeedback">${chosen?'Noch nicht richtig. Versuch es noch mal!':'Wähle ein Wort aus.'}</div>`:''}</div>`
+ }).join('');
+ const correct=d.quiz.filter((q,i)=>answers[i]===q[2]).length;
+ return `<section class="task" id="quiz">${taskHead(d,'quiz',1,'Schau hin und tippe an','Tippe bei jedem Bild auf das richtige englische Wort. Danach auf „Antworten prüfen“.')}
+ <div class="questiongrid">${cards}</div><div class="taskactions"><button class="btn primary" data-action="check" data-task="quiz">✓ Antworten prüfen</button>${solutionBtn(d,'quiz')}</div>${checked?feedback(correct===d.quiz.length,`${correct} von ${d.quiz.length} Antworten richtig.`):''}${solutionText(d,'quiz',d.quiz.map(q=>`${q[1]} = ${q[2]}`).join(' · '))}</section>`;
+}
+function renderMatch(d){
+ const p=S.pairs[d.id],found=p.found;const left=d.pairs.map((pr,i)=>`<button class="pairbtn ${found.includes(i)?'matched':selectedLeft[d.id]===i?'on':''}" data-action="pick-left" data-index="${i}" ${found.includes(i)?'disabled':''}>${found.includes(i)?'✅ ':''}${safe(pr[0])}</button>`).join('');
+ const right=p.rightOrder.map(i=>`<button class="pairbtn ${found.includes(i)?'matched':''}" data-action="pick-right" data-index="${i}" ${found.includes(i)?'disabled':''}>${found.includes(i)?'✅ ':''}${safe(d.pairs[i][1])}</button>`).join('');
+ return `<section class="task" id="match">${taskHead(d,'match',2,'Finde die passenden Paare','Tippe erst links auf Deutsch und dann rechts auf die passende englische Übersetzung. Grün bedeutet richtig.')}
+ <div class="pairwrap"><div><div class="pairhead">🇩🇪 Deutsch</div><div class="paircol">${left}</div></div><div><div class="pairhead">🇬🇧 English</div><div class="paircol">${right}</div></div></div>
+ <div class="taskactions"><span class="pill">${found.length} von ${d.pairs.length} Paaren</span><button class="btn" data-action="reset" data-task="match">↻ Paare neu starten</button></div>
+ ${messages[d.id+'.match']?feedback(found.length===d.pairs.length,messages[d.id+'.match'],found.length===d.pairs.length?'ok':'info'):''}</section>`;
+}
+function seqPromptIcon(item){return COLORS[item]?`<span class="swatch" style="background:${COLORS[item]};width:35px;height:35px"></span>`:`<span>${safe(item)}</span>`}
+function renderOrder(d){
+ const answer=d.seq.answer,order=S.order[d.id],checked=getCheck(d,'order');
+ return `<section class="task" id="order">${taskHead(d,'order',3,'In die richtige Reihenfolge bringen','Ziehe die Karten mit dem Finger am Griff ☰ nach oben oder unten. Du kannst auch zwei Karten nacheinander antippen oder die Pfeile benutzen.')}
+ <div class="orderprompt"><strong>${safe(d.seq.prompt)}</strong><span class="pic">${d.seq.icons.map(seqPromptIcon).join(' <span class="small">→</span> ')}</span></div>
+ <div class="orderlist" data-order-list>${order.map((word,i)=>`<div class="order-tile ${checked?(answer[i]===word?'good':'bad'):''} ${swapSelect[d.id]===word?'target-swap':''}" data-word="${safe(word)}"><span class="handle" data-drag-handle title="Mit dem Finger ziehen" aria-label="${safe(word)} ziehen">☰</span><span class="ordernum">${i+1}</span><button class="order-label" data-action="swap" data-word="${safe(word)}" aria-label="${safe(word)} zum Tauschen auswählen">${safe(word)}</button>${speakButton(word)}<button class="movebtn" data-action="move" data-word="${safe(word)}" data-direction="up" ${i===0?'disabled':''} aria-label="${safe(word)} nach oben">↑</button><button class="movebtn" data-action="move" data-word="${safe(word)}" data-direction="down" ${i===order.length-1?'disabled':''} aria-label="${safe(word)} nach unten">↓</button></div>`).join('')}</div>
+ <div class="taskactions"><button class="btn primary" data-action="check" data-task="order">✓ Reihenfolge prüfen</button>${solutionBtn(d,'order')}<button class="btn" data-action="reset" data-task="order">↻ Mischen</button></div>
+ ${checked?feedback(answer.every((w,i)=>w===order[i]),`${answer.filter((w,i)=>w===order[i]).length} von ${answer.length} Karten am richtigen Platz.`):''}${solutionText(d,'order',answer.map((x,i)=>`${i+1}. ${x}`).join(' → '))}</section>`;
+}
+function memVisible(d,index){const m=S.memory[d.id];return m.found.includes(m.cards[index].pair)||(memoryOpen[d.id]||[]).includes(index)}
+function renderMemory(d){
+ const m=S.memory[d.id],finished=m.found.length===d.memory.length;
+ return `<section class="task" id="memory">${taskHead(d,'memory',4,'Memory zum Antippen','Tippe zwei Karten an. Finde jeweils Bild und Wort oder Deutsch und Englisch. Die passenden Karten bleiben offen.')}
+ <div class="memorygrid">${m.cards.map((c,i)=>{
+  let open=memVisible(d,i),found=m.found.includes(c.pair);
+  let face=c.kind==='front'&&COLORS[c.value]?`<span class="swatch" style="width:48px;height:48px;background:${COLORS[c.value]}"></span>`:(c.kind==='front'&&/\p{Extended_Pictographic}/u.test(c.value)?`<span class="memfront">${safe(c.value)}</span>`:`<span class="memword">${safe(c.value)}</span>`);
+  return `<button class="memcard ${open?'back':''} ${found?'found':''}" data-action="memory" data-index="${i}" ${found?'disabled':''} aria-label="Memory-Karte ${i+1}: ${open?safe(c.value):'verdeckt'}">${open?face:'<span class="memfront">?</span>'}</button>`
+ }).join('')}</div><div class="taskactions"><span class="pill">${m.found.length} von ${d.memory.length} Paaren gefunden</span><button class="btn" data-action="reset" data-task="memory">↻ Neues Memory</button></div>${finished?feedback(true,'Super! Du hast alle Memory-Paare gefunden.'):(messages[d.id+'.memory']?feedback(false,messages[d.id+'.memory'],'info'):'')}</section>`;
+}
+function paintIcon(type,color){
+ const common=`viewBox="0 0 100 100" role="img" aria-label="${safe(type)}"`;
+ if(type==='sun')return `<svg ${common}><circle cx="50" cy="50" r="23" fill="${color}" stroke="#9d814a" stroke-width="2"/>${Array.from({length:8},(_,i)=>{let a=i*Math.PI/4;return `<line x1="${50+31*Math.cos(a)}" y1="${50+31*Math.sin(a)}" x2="${50+42*Math.cos(a)}" y2="${50+42*Math.sin(a)}" stroke="${color}" stroke-width="6" stroke-linecap="round"/>`}).join('')}</svg>`;
+ if(type==='balloon')return `<svg ${common}><ellipse cx="50" cy="41" rx="28" ry="34" fill="${color}" stroke="#596178" stroke-width="2"/><path d="M46 74L54 74L50 81Z" fill="${color}"/><path d="M50 81 Q65 91 48 99" fill="none" stroke="#596178" stroke-width="2"/></svg>`;
+ if(type==='heart')return `<svg ${common}><path d="M50 89C42 77 7 54 11 31C14 10 39 10 50 27C61 10 86 10 89 31C93 54 58 77 50 89Z" fill="${color}" stroke="#596178" stroke-width="2"/></svg>`;
+ return `<svg ${common}><path d="M83 13Q11 21 17 67Q29 97 58 73Q79 55 83 13Z" fill="${color}" stroke="#596178" stroke-width="2"/><path d="M19 83Q38 62 70 30" stroke="#596178" stroke-width="3" fill="none"/></svg>`;
+}
+const SPEC={letters:[{en:'dog',blank:'_og',icon:'🐶',choices:['d','b','p'],answer:'d'},{en:'cat',blank:'_at',icon:'🐱',choices:['c','h','r'],answer:'c'},{en:'fish',blank:'_ish',icon:'🐟',choices:['t','f','s'],answer:'f'},{en:'mouse',blank:'_ouse',icon:'🐭',choices:['n','m','b'],answer:'m'}],paint:[{type:'sun',de:'Sonne',en:'yellow'},{type:'balloon',de:'Luftballon',en:'red'},{type:'heart',de:'Herz',en:'pink'},{type:'leaf',de:'Blatt',en:'green'}],sentences:[{icon:'👩',de:'Mutter',en:'mother'},{icon:'👨',de:'Vater',en:'father'},{icon:'👧',de:'Schwester',en:'sister'},{icon:'👦',de:'Bruder',en:'brother'}],pack:[['📖','book'],['📏','ruler'],['✏️','pencil'],['✂️','scissors'],['🧴','glue'],['🖊️','pen'],['🧽','rubber'],['🧰','pencil case'],['🖍️','felt tip']]};
+function renderSpecial(d){
+ const sp=S.special[d.id],checked=getCheck(d,'special');
+ if(d.special==='letters'){
+ let items=SPEC.letters.map((x,i)=>`<div class="extra-item"><div class="extra-icon">${x.icon} <strong>${x.blank}</strong></div><div class="small">Welcher Anfangsbuchstabe fehlt?</div><div class="choices">${x.choices.map(c=>`<button class="choice ${sp[i]===c?'selected':''} ${checked&&sp[i]===c?(sp[i]===x.answer?'good':'bad'):''}" data-action="special-letter" data-index="${i}" data-value="${c}">${c.toUpperCase()}</button>`).join('')}</div></div>`).join('');
+ return wrapSpecial(d,'Setze den fehlenden Buchstaben ein','Wähle für jedes Tier den richtigen Anfangsbuchstaben.',`<div class="extra-grid">${items}</div>`,SPEC.letters.filter((x,i)=>sp[i]===x.answer).length,SPEC.letters.length,'🐶 dog · 🐱 cat · 🐟 fish · 🐭 mouse');
+ }
+ if(d.special==='paint'){
+ let chosen=sp.selected||'yellow',paints=sp.paint||{};
+ let palette=Object.entries(COLORS).map(([name,col])=>`<button class="palettebtn ${chosen===name?'active':''}" data-action="palette" data-value="${name}" aria-pressed="${chosen===name}"><span class="swatch" style="background:${col}"></span>${name}</button>`).join('');
+ let pics=SPEC.paint.map(x=>`<button class="paintbtn ${checked?(paints[x.type]===x.en?'good':'bad'):''}" data-action="paint" data-type="${x.type}">${paintIcon(x.type,COLORS[paints[x.type]]||'#e8eaf0')}<span>${x.de}</span><span class="small">${x.en}</span></button>`).join('');
+ const count=SPEC.paint.filter(x=>paints[x.type]===x.en).length;
+ return wrapSpecial(d,'Male mit einem Fingertipp','1. Wähle oben eine Farbe. 2. Tippe auf das passende Bild. Die englischen Farbwörter stehen unter den Bildern.',`<div class="palette">${palette}</div><div class="paintgrid">${pics}</div>`,count,SPEC.paint.length,'Sonne = yellow · Luftballon = red · Herz = pink · Blatt = green');
+ }
+ if(d.special==='sentences'){
+ const items=SPEC.sentences.map((x,i)=>`<div class="extra-item"><div class="extra-icon">${x.icon}</div><div><strong>${x.de}</strong></div><p>This is my <strong>${sp[i]?safe(sp[i]):'_____'}</strong>.</p><div class="choices">${[x.en,...SPEC.sentences.map(a=>a.en).filter(a=>a!==x.en)].sort((a,b)=>a.localeCompare(b)).map(word=>`<button class="choice ${sp[i]===word?'selected':''} ${checked&&sp[i]===word?(word===x.en?'good':'bad'):''}" data-action="sentence" data-index="${i}" data-value="${word}">${word}</button>`).join('')}</div></div>`).join('');
+ return wrapSpecial(d,'Ergänze die Familiensätze','Ergänze: This is my … (= Das ist meine / mein …). Tippe das richtige Wort an.',`<div class="extra-grid">${items}</div>`,SPEC.sentences.filter((x,i)=>sp[i]===x.en).length,SPEC.sentences.length,SPEC.sentences.map(x=>`This is my ${x.en}.`).join(' · '));
+ }
+ if(d.special==='pack'){
+ const selected=sp.items||[],wanted=['book','ruler','pencil','scissors','glue'];
+ const items=SPEC.pack.map(([em,en])=>`<button class="packbtn ${selected.includes(en)?'chosen':''} ${checked&&selected.includes(en)?(wanted.includes(en)?'good':'bad'):''}" data-action="pack" data-value="${en}" aria-pressed="${selected.includes(en)}"><span class="pic">${em}</span>${en} ${selected.includes(en)?'✓':''}</button>`).join('');
+ let count=wanted.filter(x=>selected.includes(x)).length,ok=count===wanted.length&&selected.length===wanted.length;
+ return wrapSpecial(d,'Packe deinen Tornister','Tippe auf genau diese fünf Dinge: book, ruler, pencil, scissors und glue. Zum Herausnehmen einfach nochmals tippen.',`<div class="packlayout"><div class="bag"><div class="bag-emoji">🎒</div><strong>My schoolbag</strong><div class="bag-inner">${selected.map(x=>`<span>${safe(x)}</span>`).join('')||'<span>Noch leer</span>'}</div></div><div class="packitems">${items}</div></div>`,ok?5:count,5,'In den Tornister gehören: book · ruler · pencil · scissors · glue.').replace('class="feedback ok"','class="feedback ok"');
+ }
+ return '';
+}
+function wrapSpecial(d,title,hint,content,correct,total,solution){
+ const ok=correct===total && !(d.special==='pack'&&(S.special[d.id].items||[]).length!==total),checked=getCheck(d,'special');
+ return `<section class="task" id="special">${taskHead(d,'special',5,title,hint)}${content}
+ <div class="taskactions"><button class="btn primary" data-action="check" data-task="special">✓ Aufgabe prüfen</button>${solutionBtn(d,'special')}</div>
+ ${checked?feedback(ok,`${correct} von ${total} richtig.${d.special==='pack'&&!ok?' Kontrolliere auch, ob etwas Falsches im Tornister liegt.':''}`):''}
+ ${solutionText(d,'special',solution)}</section>`;
+}
+function feedback(ok,message,type){let mode=type||(ok?'ok':'try');return `<div class="feedback ${mode}" role="status">${ok?'✅ ':mode==='info'?'💡 ':'🔁 '}${safe(message)} ${ok?'Super gemacht!':mode==='info'?'':'Schau auf die markierten Antworten und verbessere sie.'}</div>`}
+function solutionBtn(d,type){return (S.attempts[taskKey(d.id,type)]||0)>=2?`<button class="btn" data-action="solution" data-task="${type}">${S.solutions[taskKey(d.id,type)]?'🙈 Lösung ausblenden':'💡 Lösung zeigen'}</button>`:''}
+function solutionText(d,type,solution){return S.solutions[taskKey(d.id,type)]?`<div class="solution">💡 Lösung: ${safe(solution)}</div>`:''}
+function vocab(d){return `<details class="vocabdetails"><summary>📚 Wort-Hilfe aufklappen (Deutsch ↔ Englisch)</summary><div class="vocabs">${d.vocab.map(x=>`<div class="vocabrow"><span>${safe(x[2]||'')} ${safe(x[0])}</span><span>${safe(x[1])}</span>${speakButton(x[1])}</div>`).join('')}</div></details>`}
+function render(){
+ let d=getD();ensure(d);save();
+ const total=totalDone(),subtotal=doneCount(d.id);
+ app.innerHTML=`<header class="mast"><div class="masttop"><div><div class="eyebrow">Englisch · Wiederholung · Inklusionskurs</div><h1>My English Adventure! ✨</h1><p>Vier interaktive Arbeitsblätter mit Antippen, Ziehen, Memory und direkter Selbstkontrolle.</p></div><div class="hero-emoji" aria-hidden="true">🌟📚</div></div>
+ <div class="name-row"><label for="studentName">Mein Name:</label><input id="studentName" autocomplete="off" maxlength="50" value="${safe(S.name||'')}" placeholder="Hier Namen eingeben"><span class="pill">${total} von 20 Aufgaben geschafft</span></div>
+ <div class="toptools"><button class="btn" data-action="speech-help">🔊 Vorlesen testen</button><button class="btn" data-action="print">🖨️ Dieses AB drucken</button><button class="btn warn" data-action="new-student">↻ Für ein neues Kind starten</button></div></header>
+ <nav class="nav" aria-label="Arbeitsblätter">${DATA.map((x,i)=>`<button data-action="nav" data-page="${i}" aria-current="${i===S.active?'page':'false'}"><span class="num">ARBEITSBLATT ${x.num}</span><span class="nvtitle">${x.emoji} ${x.title}</span><span class="nvstat">${doneCount(x.id)} / 5 erledigt ${doneCount(x.id)===5?'✅':''}</span></button>`).join('')}</nav>
+ <div class="overview"><strong>Dein Fortschritt:</strong><div class="meter" role="progressbar" aria-valuenow="${total}" aria-valuemin="0" aria-valuemax="20" aria-label="Gesamtfortschritt"><i style="width:${total/20*100}%"></i></div><strong>${Math.round(total/20*100)} %</strong></div>
+ <main class="sheet"><div class="sheethead"><div class="sheeticon">${d.emoji}</div><div><h2>AB ${d.num}: ${d.title}</h2><p>${d.subtitle}</p></div><span class="tag">${subtotal} / 5 Aufgaben</span></div>
+ <div class="instructions"><strong>So geht's:</strong> ${d.intro} Prüfe deine Lösungen selbst. Grün = richtig, Rot = noch einmal probieren. Mit 🔊 kannst du Wörter anhören.</div>
+ ${renderQuiz(d)}${renderMatch(d)}${renderOrder(d)}${renderMemory(d)}${renderSpecial(d)}${vocab(d)}
+ ${subtotal===5?`<div class="well">🏆 Toll! Du hast alle fünf Aufgaben in AB ${d.num} geschafft!</div>`:''}
+ <div class="sheetfooter"><button class="btn" data-action="nav" data-page="${Math.max(0,S.active-1)}" ${S.active===0?'disabled':''}>← Vorheriges AB</button><span class="small">AB ${d.num} von 4</span>${S.active<3?`<button class="btn primary" data-action="nav" data-page="${S.active+1}">Nächstes AB →</button>`:`<button class="btn primary" data-action="nav" data-page="0">Zurück zu AB 1 ↺</button>`}</div>
+ </main><footer class="footerline">Alle Übungen funktionieren ohne Internet. Bearbeitungen bleiben nach Möglichkeit auf diesem Gerät gespeichert. Keine Anmeldung nötig.</footer>`;
+}
+function checkTask(type){const d=getD(),k=taskKey(d.id,type);S.checked[k]=true;S.attempts[k]=(S.attempts[k]||0)+1;
+ let ok=false;
+ if(type==='quiz')ok=d.quiz.every((q,i)=>S.quiz[d.id][i]===q[2]);
+ if(type==='order')ok=d.seq.answer.every((w,i)=>S.order[d.id][i]===w);
+ if(type==='special'){
+   let s=S.special[d.id];
+   if(d.special==='letters')ok=SPEC.letters.every((x,i)=>s[i]===x.answer);
+   if(d.special==='paint')ok=SPEC.paint.every(x=>(s.paint||{})[x.type]===x.en);
+   if(d.special==='sentences')ok=SPEC.sentences.every((x,i)=>s[i]===x.en);
+   if(d.special==='pack')ok=['book','ruler','pencil','scissors','glue'].every(x=>(s.items||[]).includes(x))&&(s.items||[]).length===5;
+ }
+ setDone(d.id,type,ok);render();
+}
+function changeAnswer(task,fn){const d=getD();fn();S.checked[taskKey(d.id,task)]=false;S.solutions[taskKey(d.id,task)]=false;setDone(d.id,task,false);render()}
+function resetTask(d,type){
+ const k=taskKey(d.id,type);
+ S.checked[k]=false;S.complete[k]=false;S.attempts[k]=0;S.solutions[k]=false;
+ if(type==='match'){S.pairs[d.id]={found:[],rightOrder:shuffle(d.pairs.map((_,i)=>i))};delete selectedLeft[d.id];delete messages[k]}
+ if(type==='order'){let order=shuffle(d.seq.answer);if(order.join('|')===d.seq.answer.join('|'))order.reverse();S.order[d.id]=order;delete swapSelect[d.id]}
+ if(type==='memory'){delete memoryBusy[d.id];delete memoryOpen[d.id];let cards=d.memory.flatMap((p,i)=>[{pair:i,kind:'front',value:p[0]},{pair:i,kind:'back',value:p[1]}]);S.memory[d.id]={cards:shuffle(cards),found:[]};delete messages[k]}
+ render();
+}
+function clickMemory(d,index){if(memoryBusy[d.id])return;const m=S.memory[d.id],card=m.cards[index];if(!card||m.found.includes(card.pair))return;
+ let opened=memoryOpen[d.id]||[];if(opened.includes(index))return;
+ opened=[...opened,index];memoryOpen[d.id]=opened;
+ if(opened.length===1){render();return}
+ memoryBusy[d.id]=true;
+ const same=m.cards[opened[0]].pair===card.pair;
+ if(same){m.found.push(card.pair);setDone(d.id,'memory',m.found.length===d.memory.length);messages[d.id+'.memory']='Richtiges Paar!'}
+ else messages[d.id+'.memory']='Die Karten passen noch nicht zusammen. Versuch es erneut!';
+ render();
+ setTimeout(()=>{memoryOpen[d.id]=[];memoryBusy[d.id]=false;save();if(getD().id===d.id)render()},same?450:950);
+}
+function act(e){let b=e.target.closest('[data-action]');if(!b||b.disabled)return;
+ const a=b.dataset.action,d=getD(),id=d.id;
+ if(a==='say'){speak(b.dataset.text);return}
+ if(a==='speech-help'){speak('Hello! Let us learn English together.');return}
+ if(a==='print'){window.print();return}
+ if(a==='nav'){S.active=Number(b.dataset.page);delete swapSelect[d.id];render();window.scrollTo({top:0,behavior:'instant'});return}
+ if(a==='new-student'){
+   if(window.confirm('Neues Kind starten? Alle bisherigen Antworten und Punkte auf diesem Gerät werden zurückgesetzt.')){S=empty();selectedLeft={};messages={};swapSelect={};memoryOpen={};memoryBusy={};render();document.getElementById('studentName')?.focus()}
+   return;
+ }
+ if(a==='answer'){changeAnswer('quiz',()=>{S.quiz[id][b.dataset.index]=b.dataset.value});return}
+ if(a==='pick-left'){selectedLeft[id]=Number(b.dataset.index);messages[id+'.match']='Jetzt rechts das passende englische Wort antippen.';render();return}
+ if(a==='pick-right'){
+   const picked=selectedLeft[id],right=Number(b.dataset.index);
+   if(picked===undefined){messages[id+'.match']='Tippe zuerst ein deutsches Wort links an.';render();return}
+   if(picked===right){S.pairs[id].found.push(picked);delete selectedLeft[id];const finished=S.pairs[id].found.length===d.pairs.length;setDone(id,'match',finished);messages[id+'.match']=finished?'Alle Paare richtig verbunden!':'Richtig! Suche das nächste Paar.'}
+   else messages[id+'.match']='Noch nicht richtig. Versuche es mit einem anderen englischen Wort.';
+   render();return;
+ }
+ if(a==='swap'){
+   const word=b.dataset.word,selected=swapSelect[id];
+   if(!selected){swapSelect[id]=word;render();return}
+   if(selected===word){delete swapSelect[id];render();return}
+   changeAnswer('order',()=>{let arr=S.order[id],i=arr.indexOf(selected),j=arr.indexOf(word);if(i>=0&&j>=0)[arr[i],arr[j]]=[arr[j],arr[i]];delete swapSelect[id]});return;
+ }
+ if(a==='move'){
+   changeAnswer('order',()=>{let arr=S.order[id],i=arr.indexOf(b.dataset.word),j=i+(b.dataset.direction==='up'?-1:1);if(i>=0&&j>=0&&j<arr.length)[arr[i],arr[j]]=[arr[j],arr[i]]});return;
+ }
+ if(a==='memory'){clickMemory(d,Number(b.dataset.index));return}
+ if(a==='special-letter'||a==='sentence'){changeAnswer('special',()=>{S.special[id][b.dataset.index]=b.dataset.value});return}
+ if(a==='palette'){S.special[id].selected=b.dataset.value;render();return}
+ if(a==='paint'){changeAnswer('special',()=>{let sp=S.special[id];sp.paint??={};sp.paint[b.dataset.type]=sp.selected||'yellow'});return}
+ if(a==='pack'){changeAnswer('special',()=>{let sp=S.special[id];sp.items??=[];sp.items=sp.items.includes(b.dataset.value)?sp.items.filter(w=>w!==b.dataset.value):[...sp.items,b.dataset.value]});return}
+ if(a==='check'){checkTask(b.dataset.task);return}
+ if(a==='solution'){let k=taskKey(id,b.dataset.task);S.solutions[k]=!S.solutions[k];render();return}
+ if(a==='reset'){resetTask(d,b.dataset.task);return}
+}
+function speak(word){if(!('speechSynthesis'in window)) {alert('Die Vorlesefunktion wird von diesem Browser leider nicht unterstützt.');return}try{window.speechSynthesis.cancel();let utter=new SpeechSynthesisUtterance(word);utter.lang='en-GB';utter.rate=.8;window.speechSynthesis.speak(utter)}catch(_){alert('Das Vorlesen ist auf diesem Gerät gerade nicht verfügbar.')}}
+app.addEventListener('click',act);
+app.addEventListener('input',e=>{if(e.target.id==='studentName'){S.name=e.target.value;save()}});
+// Pointer Events statt HTML5 Drag & Drop: zuverlässig für Finger, Stift und Maus.
+app.addEventListener('pointerdown',e=>{
+ const handle=e.target.closest('[data-drag-handle]');if(!handle)return;
+ const tile=handle.closest('.order-tile'),list=tile?.closest('[data-order-list]');if(!tile||!list)return;
+ drag={pointerId:e.pointerId,tile,list,source:getD().id,startY:e.clientY,moved:false};
+ handle.setPointerCapture?.(e.pointerId);
+ tile.classList.add('dragging');e.preventDefault();
+});
+app.addEventListener('pointermove',e=>{
+ if(!drag||e.pointerId!==drag.pointerId)return;
+ if(Math.abs(e.clientY-drag.startY)>7)drag.moved=true;
+ let target=document.elementFromPoint(e.clientX,e.clientY)?.closest('.order-tile');
+ if(target&&target!==drag.tile&&target.parentElement===drag.list){
+   let r=target.getBoundingClientRect();drag.list.insertBefore(drag.tile,e.clientY<r.top+r.height/2?target:target.nextSibling)
+ }
+ e.preventDefault();
+});
+function endDrag(e){
+ if(!drag||e.pointerId!==drag.pointerId)return;
+ let {tile,list,source,moved}=drag;tile.classList.remove('dragging');drag=null;
+ if(moved){let newOrder=Array.from(list.querySelectorAll('.order-tile')).map(n=>n.dataset.word);S.order[source]=newOrder;S.checked[taskKey(source,'order')]=false;S.solutions[taskKey(source,'order')]=false;setDone(source,'order',false)}
+ render();
+}
+app.addEventListener('pointerup',endDrag);app.addEventListener('pointercancel',endDrag);
+render();
+</script>
+</body>
+</html>
